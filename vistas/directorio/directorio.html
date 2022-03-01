@@ -1,0 +1,139 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preload" href="../../css/normalize.css" as="style"> 
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+        <link rel="preload" href="../../css/style.css" as="style">
+        <link href="../../css/style.css" rel="stylesheet">
+        
+        <title>REDEAS</title>
+    </head>
+
+    <body>
+        <header class="nav-fix">
+            <nav class="nav-bg">
+                <ul class="contenedor-navegacion contenedor">
+                    <li class="enlace enlace__logo" id="logo"><img class="header-logo" src="../../img/03_REDEAS_Color.png" alt="Logotipo"><button class="nav-toggle" id="btn-nav-menu">
+                        <i class="fas fa-bars"></i>
+                    </button></li>
+                    <li class="enlace ocultar"><a href="../usuario/index.php">Inicio</a></li>
+                    <li class="enlace ocultar"><a href="../calendario/calendario.html">Calendario</a></li>
+                    <li class="enlace ocultar"><a href="../biblioteca/biblioteca.html">Biblioteca</a></li>
+                    <li class="enlace ocultar"><a class="botonP">Directorio</a></li>
+                    <li class="enlace ocultar" id="perfil"><a href="#perfil" class="padre">Perfil</a>
+                        <nav class="submenu">
+                            <a style="font-size: .8rem;" href="#">Editar Perfil</a>
+                            <a style="font-size: .8rem;" href="#">Cerrar Sesión</a>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contenedor header-tb">
+            <h1 class="header-titulos">Directorio</h1>
+            <div class="buscador">
+                <div class="buscador--texto">
+                    <input class="buscador-input" placeholder="Buscar evento">
+                </div>
+                <div class="buscador--icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor header-calendario">
+            <section class="months">
+                <input type="submit" value="A">
+                <input type="submit" value="B">
+                <input type="submit" value="C">
+                <input type="submit" value="D">
+                <input type="submit" value="E">
+                <input type="submit" value="F">
+                <input type="submit" value="G">
+                <input type="submit" value="H">
+                <input type="submit" value="I">
+                <input type="submit" value="J">
+                <input type="submit" value="K">
+                <input type="submit" value="L">
+                <input type="submit" value="M">
+                <input type="submit" value="N">
+                <input type="submit" value="O">
+                <input type="submit" value="P">
+                <input type="submit" value="Q">
+                <input type="submit" value="R">
+                <input type="submit" value="S">
+                <input type="submit" value="T">
+                <input type="submit" value="U">
+                <input type="submit" value="V">
+                <input type="submit" value="W">
+                <input type="submit" value="X">
+                <input type="submit" value="Y">
+                <input type="submit" value="Z">
+            </section>
+            <section class="years">
+                <label>Filtro
+                    <select name="filtro">
+                        <option value="2021" selected>Todos</option>
+                        <option value="2022">Recientes</option>
+                    </select>
+                </label>
+                
+            </section>
+        </section>
+        <main class="contenedor">
+            <section class="grid-directorio">
+                <div class="directorio">
+                    <a class="d" href="profile.html">
+                        <img src="../../img/perfil.png" alt="Foto de Perfil">
+                        <div class="directorio__informacion">
+                            <p>Aqui va el nombre</p>
+                            <p>Organizacion</p>
+                            <p>Minicipio o estado</p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="directorio">
+                    <a class="d" href="profile.html">
+                        <img src="../../img/perfil.png" alt="Foto de Perfil">
+                        <div class="directorio__informacion">
+                            <p>Aqui va el nombre</p>
+                            <p>Organizacion</p>
+                            <p>Minicipio o estado</p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="directorio">
+                    <a class="d" href="#">
+                        <img src="../../img/perfil.png" alt="Foto de Perfil">
+                        <div class="directorio__informacion">
+                            <p>Aqui va el nombre</p>
+                            <p>Organizacion</p>
+                            <p>Minicipio o estado</p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="directorio">
+                    <a class="d" href="#">
+                        <img src="../../img/perfil.png" alt="Foto de Perfil">
+                        <div class="directorio__informacion">
+                            <p>Aqui va el nombre</p>
+                            <p>Organizacion</p>
+                            <p>Minicipio o estado</p>
+                        </div> 
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="contenedor footer">
+            <p>Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>

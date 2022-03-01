@@ -1,0 +1,127 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preload" href="../../css/normalize.css" as="style"> 
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+        <link rel="preload" href="../../css/style.css" as="style">
+        <link href="../../css/style.css" rel="stylesheet">
+        
+        <title>REDEAS</title>
+    </head>
+
+    <body>
+        <header class="nav-fix">
+            <nav class="nav-bg">
+                <ul class="contenedor-navegacion contenedor">
+                    <li class="enlace enlace__logo" id="logo"><img class="header-logo" src="../../img/03_REDEAS_Color.png" alt="Logotipo"><button class="nav-toggle" id="btn-nav-menu">
+                        <i class="fas fa-bars"></i>
+                    </button></li>
+                    <li class="enlace ocultar"><a href="../usuario/index.php">Inicio</a></li>
+                    <li class="enlace ocultar"><a class="botonP">Calendario</a></li>
+                    <li class="enlace ocultar"><a href="../biblioteca/biblioteca.html">Biblioteca</a></li>
+                    <li class="enlace ocultar"><a href="../directorio/directorio.html">Directorio</a></li>
+                    <li class="enlace ocultar" id="perfil"><a href="#perfil" class="padre">Perfil</a>
+                        <nav class="submenu">
+                            <a style="font-size: .8rem;" href="#">Editar Perfil</a>
+                            <a style="font-size: .8rem;" href="#">Cerrar Sesión</a>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contenedor header-tb">
+            <h1 class="header-titulos">Calendario de actividades</h1>
+            <div class="buscador">
+                <div class="buscador--texto">
+                    <input class="buscador-input" placeholder="Buscar evento">
+                </div>
+                <div class="buscador--icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor header-calendario">
+            <section class="months">
+                <input type="submit" value="Enero">
+                <input type="submit" value="Febrero">
+                <input type="submit" value="Marzo">
+                <input type="submit" value="Abril">
+                <input type="submit" value="Mayo">
+                <input type="submit" value="Junio">
+                <input type="submit" value="Julio">
+                <input type="submit" value="Agosto">
+                <input type="submit" value="Septiembre">
+                <input type="submit" value="Octubre">
+                <input type="submit" value="Noviembre">
+                <input type="submit" value="Diciembre">
+            </section>
+            <section class="years">
+                <label>Año
+                    <select name="year">
+                        <option value="2021" selected>2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </label>
+                
+            </section>
+        </section>
+        <main class="contenedor">
+            <section class="contenedor"> 
+                <div class="semana">
+                    <h3>SEMANA DEL 00 al 00</h3>
+                    <spam>ENERO 2022</spam>
+                </div>
+                <section class="grid">
+                    <div class="evento">
+                        <a href="evento.html">
+                            <img class="evento__imagen" src="../../img/ejemploActividad.jpg">
+                            <div class="evento__informacion">
+                                <p class="evento__nombre">Nombre del Evento</p>
+                                <p class="evento__fecha">Fecha del Evento</p>
+                            </div>
+                        </a>
+                    </div> <!--.evento-->
+                </section>
+            </section>
+            <section class="contenedor"> 
+                <div class="semana">
+                    <h3>SEMANA DEL 00 al 00</h3>
+                    <spam>ENERO 2022</spam>
+                </div>
+                <section class="grid">
+                    <div class="evento">
+                        <a href="#">
+                            <img class="evento__imagen" src="../../img/ejemploActividad.jpg">
+                            <div class="evento__informacion">
+                                <p class="evento__nombre">Nombre del Evento</p>
+                                <p class="evento__fecha">Fecha del Evento</p>
+                            </div>
+                        </a>
+                    </div> <!--.evento-->
+                    <div class="evento">
+                        <a href="#">
+                            <img class="evento__imagen" src="../../img/ejemploActividad.jpg">
+                            <div class="evento__informacion">
+                                <p class="evento__nombre">Nombre del Evento</p>
+                                <p class="evento__fecha">Fecha del Evento</p>
+                            </div>
+                        </a>
+                    </div> <!--.evento-->
+                </section>
+            </section>
+        </main>
+    </body>
+    <footer class="contenedor footer">
+        <p>Todos los derechos reservados.</p>
+    </footer>
+
+</html>
